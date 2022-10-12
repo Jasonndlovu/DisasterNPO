@@ -1,7 +1,12 @@
-﻿namespace DisasterNPO.Models
+﻿using DisasterNPO.Data;
+
+namespace DisasterNPO.Models
 {
     public class DonationModel
     {
+
+        public List<Donations> Donations { get; set; }
+
         public int Id { get; set; }
         public string Name{ get; set; }
         
@@ -12,6 +17,11 @@
 
         public string Other { get; set; }
         public string Description { get; set; }
+
+        public DonationModel()
+        {
+            Donations = new List<Donations>();
+        }
 
     }
 }
