@@ -10,6 +10,7 @@ namespace DisasterNPO.Controllers
         public static List<MoneyModel> moneyModels = new List<MoneyModel>();
         public static List<DonationModel> donationModels = new List<DonationModel>();
         public static List<DisasterModel> disasterModels = new List<DisasterModel>();
+        public int Balance;
 
         public UserController()
         {
@@ -58,6 +59,8 @@ namespace DisasterNPO.Controllers
 
             //context.Money.Add(mw);
             //context.SaveChanges();
+
+            Balance = +mw.Money;
 
             moneyModels.Add(mw);
 

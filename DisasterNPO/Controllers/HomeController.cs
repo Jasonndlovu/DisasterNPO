@@ -48,6 +48,11 @@ namespace DisasterNPO.Controllers
             return View();
         }
 
+        public IActionResult Balance()
+        {
+            return View();
+        }
+
         public IActionResult ViewinMoney()
         {
             return View(UserController.moneyModels);
