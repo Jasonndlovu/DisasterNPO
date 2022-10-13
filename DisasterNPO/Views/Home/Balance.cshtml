@@ -3,21 +3,38 @@
 
 @{
     ViewData["Title"] = "Balance";
+
+    Balance balance = new Balance();
+
+    int _balance = balance.balance;
+
+
+    
 }
 
-<center><h1>Balance</h1></center>
 
+
+<center><h1>Balance</h1></center>
+<center>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.balance)
+                
+
+                @Html.DisplayNameFor(model => model.balance);
+
+            ;
+                
             </th>
         </tr>
     </thead>
     <tbody>
-
-         
-
+            <tr>
+                <td>
+                R @_balance
+                </td>
+            </tr>
     </tbody>
 </table>
+</center>
