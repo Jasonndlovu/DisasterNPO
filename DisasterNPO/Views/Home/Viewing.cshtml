@@ -13,20 +13,15 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.Item )
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.date)
+                @Html.DisplayNameFor(model => model.Units )
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.catergories)
+                @Html.DisplayNameFor(model => model.category)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Other)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -34,19 +29,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                    @Html.DisplayFor(modelItem => item.Item)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.date)
+                    @Html.DisplayFor(modelItem => item.Units)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.catergories)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Other)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
+                    @Html.DisplayFor(modelItem => item.category)
             </td>
         </tr>
 }

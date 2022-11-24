@@ -78,35 +78,24 @@
 
 
         <div class="form-field col-lg-12">
-            <input id="name" name="Name" class="input-text js-input" type="text" required>
-            <label class="label" for="name">Name</label>
+            <input id="Item" name="Item" class="input-text js-input" type="text" required>
+            <label class="label" for="Item">Item</label>
         </div>
         <div class="form-field col-lg-12">
-            <label for="birthday">Date</label>
-            <input type="date" id="date" name="date" class="input-text js-input">
-
+            <label for="Units">Number Of Units:</label>
+            <input type="number" id="Units" name="Units" min="1" max="100" class="input-text js-input">
         </div>
         <div class="form-field col-lg-12">
-            <label for="items">Number Of Items:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="100" class="input-text js-input">
-        </div>
-        <div class="form-field col-lg-12">
-            <label for="categories">Categories:</label>
-            <select id="Categories" name="catergories" class="input-text js-input" required>
+            <label for="category">category:</label>
+            <select id="category" name="category" class="input-text js-input" required>
                 <option value="Clothes">Clothes</option>
                 <option value="Non‐perishable foods">Non‐perishable foods</option>
                 <option value="other">Other</option>
             </select>
         </div>
-        <div class="form-field col-lg-12">
-            <input id="other" name="other" class="input-text js-input" type="text">
-            <label class="label" for="Other">Other(If Other was selected)</label>
-        </div>
         <br />
         <br />
-        <div class="form-field col-lg-12">
-            <textarea id="description" name="Description" class="input-text js-input" placeholder="Description.." style="height:200px"></textarea>
-        </div>
+        
         <div class="form-field col-lg-12">
             <input class="submit-btn" type="submit" value="Submit">
         </div>
