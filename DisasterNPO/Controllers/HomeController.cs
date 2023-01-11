@@ -62,6 +62,11 @@ namespace DisasterNPO.Controllers
             return View();
         }
 
+        
+            public IActionResult DonationsChart()
+        {
+            return View();
+        }
         public IActionResult ViewinMoney()
         {
             return View(MM.Information());

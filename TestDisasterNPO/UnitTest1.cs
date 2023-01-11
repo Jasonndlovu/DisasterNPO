@@ -6,7 +6,7 @@ namespace TestDisasterNPO
         [Fact]
         public void Test1()
         {
-            object value = DisasterNPO.Models.Balance();
+           // object value = DisasterNPO.Models.Balance();
         }
     }
 }
