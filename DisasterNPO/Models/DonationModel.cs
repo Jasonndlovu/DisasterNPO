@@ -1,11 +1,16 @@
 ﻿using DisasterNPO.Data;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.IO;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
 namespace DisasterNPO.Models
 {
+    
     public class DonationModel
     {
+        
         public static SqlConnection con = new SqlConnection("Server=tcp:disasternpodbserver.database.windows.net,1433;Initial Catalog=DisasterNPO_db;Persist Security Info=False;User ID=JasonN42;Password=Khanajj1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         //DisasterModel disasterM = new DisasterModel();
@@ -21,7 +26,7 @@ namespace DisasterNPO.Models
 
 
 
-
+        [TestMethod]
         public List<DonationModel> Information1()
         {
             List<DonationModel> data_list;

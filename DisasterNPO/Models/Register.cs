@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.SqlClient;
 
 namespace DisasterNPO.Models
 {
-	public class Register
+    
+    public class Register
 	{
         SqlConnection con = new SqlConnection("Server=tcp:disasternpodbserver.database.windows.net,1433;Initial Catalog=DisasterNPO_db;Persist Security Info=False;User ID=JasonN42;Password=Khanajj1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         SqlCommand cmd;

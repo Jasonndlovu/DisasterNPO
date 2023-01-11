@@ -1,13 +1,14 @@
 ﻿using DisasterNPO.Controllers;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.SqlClient;
 
 namespace DisasterNPO.Models
 {
 
 
-
-	public class Balance
+  
+    public class Balance
 	{
 
         UserController user = new UserController();

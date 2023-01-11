@@ -1,11 +1,13 @@
 ﻿using DisasterNPO.Controllers;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.CodeAnalysis;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data;
 using System.Data.SqlClient;
 
 namespace DisasterNPO.Models
 {
+   
     public class DisasterModel
     {
         public static SqlConnection con = new SqlConnection("Server=tcp:disasternpodbserver.database.windows.net,1433;Initial Catalog=DisasterNPO_db;Persist Security Info=False;User ID=JasonN42;Password=Khanajj1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
