@@ -2,6 +2,9 @@
 
 @{
     ViewData["Title"] = "ViewingDisaster";
+    DisasterModel model = new DisasterModel();
+    int Moneyused = model.Money_used;
+    //String Moneyused = model.Money_used;
 }
 
 <center><h1>Disaster List</h1></center>
@@ -28,33 +31,54 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Money_allocated)
+                @Html.DisplayNameFor(model => model.MoneyAccocated)
             </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Aidtypes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-               R @Html.DisplayFor(modelItem => item.Money_allocated)
-            </td>
+                    @Html.DisplayFor(modelItem => item.Aidtypes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    R @Html.DisplayFor(modelItem => item.MoneyAccocated)
+                </td>
          
         </tr>
 }
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Money_used)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td>
+             R @Moneyused
+                </td>
+            </tr>
+        
     </tbody>
 </table>

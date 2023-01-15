@@ -1,0 +1,12 @@
+1. In order to edit data, users can now securely log in or register with the web application.
+2. Authorized users can now record new monetary donations through the online application. Although the donor has the option to remain anonymous, the date and amount are required.
+3. Authorized users can now record new goods donations through the online application. It is necessary to include the date, quantity, category, and description of each item. But the donor may choose to keep their identity secret.
+4. Non-perishable food and clothing are the current pre-configured categories for the web application.
+5. Authorized users of the online application can create new product categories.
+6. Authorized users of the online application can create new product categories.
+7. Authorized users can record a new disaster using the web application. The start and finish dates, the location, and a description are all part of a disaster's data. Additionally, it must be feasible to define the types of assistance that are needed, such as food, clothing, and access to water.
+
+8. Authorized users of the online application can examine the following lists: 
+a. All incoming monetary donations.
+b. All incoming goods donations.
+c. All disasters.

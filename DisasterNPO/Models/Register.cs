@@ -1,11 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Data.SqlClient;
 
 namespace DisasterNPO.Models
 {
-	public class Register
+    
+    public class Register
 	{
-        public int Id { get; set; }
-        public string RegEmail { get; set; } = null!;
+        SqlConnection con = new SqlConnection("Server=tcp:disasternpodbserver.database.windows.net,1433;Initial Catalog=DisasterNPO_db;Persist Security Info=False;User ID=JasonN42;Password=Khanajj1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        SqlCommand cmd;
+        public string Username { get; set; } = null!;
 		public string RegPassword { get; set; } = null!;
-	}
+
+
+		public Register() {
+
+            con.Open();
+            cmd = new SqlCommand($"INSERT INTO Users (UserName, Password) VALUES ('{Username}', '{RegPassword}');", con);
+
+            //cmd.ExecuteNonQuery();
+            con.Close();
+
+
+        }
+    }
+
+
 }

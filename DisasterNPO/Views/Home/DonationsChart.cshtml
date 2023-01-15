@@ -1,0 +1,51 @@
+﻿@model IEnumerable<DisasterNPO.Models.Chart>
+
+@{
+    ViewData["Title"] = "Viewing";
+
+    Chart C = new Chart();
+
+    C.Information();
+    C.Information2();
+    C.Information3();
+
+    int donations = C.Donations;
+    int Money = C.Money;
+    int Disasters = C.Disasters;
+   // int donations = 50;
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+    <canvas id="myChart" style="width:100%;max-width:100%"></canvas>
+
+    <script>
+        var xValues = ["Donations", "Money", "Disasters"];
+        var yValues = [@donations, @Money, @Disasters];
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797"
+        ];
+
+        new Chart("myChart", {
+          type: "doughnut",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              text: "donut chart"
+            }
+          }
+        });
+    </script>
+
+
+</body>
